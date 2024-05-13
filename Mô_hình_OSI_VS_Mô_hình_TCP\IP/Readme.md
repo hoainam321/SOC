@@ -3,7 +3,7 @@ Mục lục:
 
 - [Mô hình OSI là gì ?](#mô-hình-osi-là-gì-)
 - [Thuật ngữ  ?](#thuật-ngữ)
-- [Các lớp mô hình OSI](#what-is-the-osi-model)
+- [Các lớp mô hình OSI](#các-lớp-mô-hình-osi)
   - [Các lớp OSI](#what-is-the-osi-model)
   - [Bảng chi tiết](#what-is-the-osi-model)
   - [Chi tiết từng lớp](#what-is-the-osi-model)
