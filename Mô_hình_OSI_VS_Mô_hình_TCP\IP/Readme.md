@@ -1,7 +1,7 @@
 ##  Tóm tắt mô hình OSI
 Mục lục:
 
-- [Mô hình OSI là gì ?](#Model-OSI-là-gì-?)
+- [Mô hình OSI là gì ?](#mô-hình-osi-là-gì-)
 - [Thuật ngữ  ?](#what-is-the-osi-model)
 - [Các lớp mô hình OSI](#what-is-the-osi-model)
   - [Các lớp OSI](#what-is-the-osi-model)
@@ -72,6 +72,23 @@ Nói một cách đơn giản, mô hình này sẽ giúp bạn tìm ra mức đ�
 | 3     | Network         | Packets            | Router, Multiplayer Switch, Router         | IPv4, IPv6, IPSec, OSPF, EIGRP                               |
 | 2     | Data Link       | Frames             | Switch, Bridge, NIC, Wireless Access Point | MAC, ARP Ethernet 802.3 (Wired), CDP, LLDP, HDLC, PPP, DSL, L2TP, IEEE 802.11 (Wireless), SONET/SDH |
 | 1     | Physical        | Bits               | All the above                              | Electrical signal (copper wire), Light signal (optical fibre), Radio signal (air) |
+
+### Chi tiết từng lớp
+**L7 Lớp ứng dụng (Application)**
+
+<div align="center">
+<img src="media/7-application-layer.svg">
+<p><strong>Figure:</strong> L7 the application layer</p>
+</div>
+
+Đây là lớp duy nhất tương tác trực tiếp với dữ liệu từ người dùng. Các ứng dụng phần mềm như trình duyệt web và ứng dụng email đều dựa vào lớp ứng dụng để bắt đầu liên lạc. Nhưng cần phải làm rõ rằng *các ứng dụng phần mềm máy khách không phải là một phần của lớp ứng dụng*; thay vào đó, lớp ứng dụng chịu trách nhiệm về các giao thức và thao tác dữ liệu mà phần mềm dựa vào để trình bày dữ liệu có ý nghĩa cho người dùng. Các giao thức lớp ứng dụng bao gồm HTTP , HTTPS, FTP, SFTP, DNS cũng như SMTP (Giao thức truyền thư đơn giản là một trong những giao thức cho phép liên lạc qua email), v.v.
+
+**L6 Lớp trình bầy  (Presentation)**
+
+<div align="center">
+<img src="media/6-presentation-layer.svg">
+<p><strong>Figure:</strong> L6 the presentation layer.</p>
+</div>
 
 
 
