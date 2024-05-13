@@ -2,7 +2,7 @@
 Mục lục:
 
 - [Mô hình OSI là gì ?](#mô-hình-osi-là-gì-)
-- [Thuật ngữ  ?](#what-is-the-osi-model)
+- [Thuật ngữ  ?](#thuật-ngữ)
 - [Các lớp mô hình OSI](#what-is-the-osi-model)
   - [Các lớp OSI](#what-is-the-osi-model)
   - [Bảng chi tiết](#what-is-the-osi-model)
@@ -28,7 +28,7 @@ Mô hình OSI có thể được coi là ngôn ngữ phổ quát cho mạng máy
 
 Nói một cách đơn giản, mô hình này sẽ giúp bạn tìm ra mức độ của sự cố và rất hữu ích để khắc phục sự cố mạng. Cho dù đó là một người không thể kết nối máy tính xách tay của họ với Internet hay một trang web bị ngừng hoạt động đối với hàng nghìn người dùng, mô hình OSI có thể giúp giải quyết vấn đề và cô lập nguồn gốc của sự cố. Nếu vấn đề có thể được thu hẹp lại thành một lớp cụ thể của mô hình thì có thể tránh được rất nhiều công việc không cần thiết.
 
-### Thuật ngữ chính
+### Thuật ngữ
 
 **Encapsulation:** đang chuẩn bị và chuyển dữ liệu từ bất kỳ lớp trên nào xuống lớp Dưới. Về cơ bản, điều đó có nghĩa là đi từ lớp ứng dụng xuống lớp vật lý.
 
