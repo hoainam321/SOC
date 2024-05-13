@@ -4,18 +4,18 @@ Mục lục:
 - [Mô hình OSI là gì ?](#mô-hình-osi-là-gì-)
 - [Thuật ngữ  ?](#thuật-ngữ)
 - [Các lớp mô hình OSI](#các-lớp-mô-hình-osi)
-  - [Các lớp OSI](#what-is-the-osi-model)
-  - [Bảng chi tiết](#what-is-the-osi-model)
-  - [Chi tiết từng lớp](#what-is-the-osi-model)
-    - [L7 lớp ứng dụng](#what-is-the-osi-model)
-    - [L6 lớp trình bày](#what-is-the-osi-model)
-    - [L5 lớp phiên](#what-is-the-osi-model)
-    - [L4 lớp vận chuyển](#what-is-the-osi-model)
-    - [L3 lớp mạng](#what-is-the-osi-model)
-    - [L2 lớp liên kết dữ liệu](#what-is-the-osi-model)
-    - [L1 lớp vật lý](#what-is-the-osi-model)
-  - [Cổng lớp vận chuyển](#what-is-the-osi-model)
-  - [Các cổng quan trọng trên lớp vận chuyển](#what-is-the-osi-model)
+  - [Các lớp OSI](#các-lớp-osi)
+  - [Bảng chi tiết](#bảng-chi-tiết)
+  - [Chi tiết từng lớp](#chi-tiết-từng-lớp)
+    - [L7 lớp ứng dụng](#l7-lớp-ứng-dụng-(application))
+    - [L6 lớp trình bày](#l6-lớp-trình-bầy)
+    - [L5 lớp phiên](#l5-lớp-phiên)
+    - [L4 lớp vận chuyển](#l4-lớp-vận-chuyển)
+    - [L3 lớp mạng](#l3-lớp-mạng)
+    - [L2 lớp liên kết dữ liệu](#l2-lớp-liên-kết-dữ-liệu)
+    - [L1 lớp vật lý](#l1-lớp-vật-lý)
+  - [Cổng lớp vận chuyển](#cổng-lớp-vận-chuyển)
+  - [Các cổng quan trọng trên lớp vận chuyển](#các-cổng-quan-trọng-trên-lớp-vận-chuyển)
   - [Các từ viết tắt](#what-is-the-osi-model)
 
 
@@ -52,9 +52,9 @@ Nói một cách đơn giản, mô hình này sẽ giúp bạn tìm ra mức đ�
 
 Để thông tin con người có thể đọc được được truyền qua mạng từ thiết bị này sang thiết bị khác, dữ liệu phải di chuyển xuống bảy lớp của mô hình OSI trên thiết bị gửi và sau đó di chuyển lên bảy lớp ở đầu nhận.
 
-## Các  lớp mô hình OSI
+## Các lớp mô hình OSI
 
-### Các lớp  OSI
+### Các lớp OSI
 
 <div align="center">
 <img src="media/osi-model-7-layers.svg">
