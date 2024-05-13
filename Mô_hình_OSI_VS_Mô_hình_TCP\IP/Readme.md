@@ -8,12 +8,12 @@ Mục lục:
   - [Bảng chi tiết](#bảng-chi-tiết)
   - [Chi tiết từng lớp](#chi-tiết-từng-lớp)
     - [L7 lớp ứng dụng](#l7-lớp-ứng-dụng-(application))
-    - [L6 lớp trình bày](#l6-lớp-trình-bầy)
-    - [L5 lớp phiên](#l5-lớp-phiên)
-    - [L4 lớp vận chuyển](#l4-lớp-vận-chuyển)
-    - [L3 lớp mạng](#l3-lớp-mạng)
-    - [L2 lớp liên kết dữ liệu](#l2-lớp-liên-kết-dữ-liệu)
-    - [L1 lớp vật lý](#l1-lớp-vật-lý)
+    - [L6 lớp trình bày](#l6-lớp-trình-bầy-(Presentation))
+    - [L5 lớp phiên](#l5-lớp-phiên-(session))
+    - [L4 lớp vận chuyển](#l4-lớp-vận-chuyển-(transport))
+    - [L3 lớp mạng](#l3-lớp-mạng-(network))
+    - [L2 lớp liên kết dữ liệu](#l2-lớp-liên-kết-dữ-liệu-(data-linklink))
+    - [L1 lớp vật lý](#l1-lớp-vật-lý-(physical))
   - [Cổng lớp vận chuyển](#cổng-lớp-vận-chuyển)
   - [Các cổng quan trọng trên lớp vận chuyển](#các-cổng-quan-trọng-trên-lớp-vận-chuyển)
   - [Các từ viết tắt](#what-is-the-osi-model)
@@ -62,7 +62,7 @@ Nói một cách đơn giản, mô hình này sẽ giúp bạn tìm ra mức đ�
 </div>
 
 
-### Bảng  chi tiết
+### Bảng chi tiết
 | Layer | OSI model layer | Protocol Data Unit | Devices                                    | Protocols                                                    |
 | ----- | --------------- | ------------------ | ------------------------------------------ | ------------------------------------------------------------ |
 | 7     | Application     | Data               | L7 firewall                                | HTTP, DNS, DHCP, FTP, Telnet, SSH, SMTP, POP, IMAP, NTP, SNMMP, TLS/SSL, GBP, RIP, SIP, etc. |
@@ -74,7 +74,7 @@ Nói một cách đơn giản, mô hình này sẽ giúp bạn tìm ra mức đ�
 | 1     | Physical        | Bits               | All the above                              | Electrical signal (copper wire), Light signal (optical fibre), Radio signal (air) |
 
 ### Chi tiết từng lớp
-**L7 Lớp ứng dụng (Application)**
+#### L7 Lớp ứng dụng (Application)
 
 <div align="center">
 <img src="media/7-application-layer.svg">
@@ -83,7 +83,7 @@ Nói một cách đơn giản, mô hình này sẽ giúp bạn tìm ra mức đ�
 
 Đây là lớp duy nhất tương tác trực tiếp với dữ liệu từ người dùng. Các ứng dụng phần mềm như trình duyệt web và ứng dụng email đều dựa vào lớp ứng dụng để bắt đầu liên lạc. Nhưng cần phải làm rõ rằng *các ứng dụng phần mềm máy khách không phải là một phần của lớp ứng dụng*; thay vào đó, lớp ứng dụng chịu trách nhiệm về các giao thức và thao tác dữ liệu mà phần mềm dựa vào để trình bày dữ liệu có ý nghĩa cho người dùng. Các giao thức lớp ứng dụng bao gồm HTTP , HTTPS, FTP, SFTP, DNS cũng như SMTP (Giao thức truyền thư đơn giản là một trong những giao thức cho phép liên lạc qua email), v.v.
 
-**L6 Lớp trình bầy  (Presentation)**
+#### L6 Lớp trình bầy (Presentation)
 
 <div align="center">
 <img src="media/6-presentation-layer.svg">
@@ -135,7 +135,7 @@ Lớp mạng chịu trách nhiệm tạo điều kiện thuận lợi cho việc
 
 Nhiệm vụ chính của lớp này thường là đánh địa chỉ logic (IPv4, IPv6, mặt nạ, IP), định tuyến (gửi gói tin đến ai), xác định đường dẫn (Mở đường dẫn ngắn nhất trước, Giao thức cổng biên, hệ thống trung gian-hệ thống trung gian).
 
-**L2 Lớp liên kết dữ liệu**
+####  L2 Lớp liên kết dữ liệu (Data link)
 
 <div align="center">
 <img src="media/2-data-link-layer.svg">
@@ -146,7 +146,7 @@ Lớp liên kết dữ liệu rất giống với lớp mạng, ngoại trừ l�
 
 Nhiệm vụ thường là địa chỉ logic (lớp mạng), địa chỉ vật lý (lớp liên kết dữ liệu thông qua địa chỉ MAC của Thẻ giao diện mạng, Bộ chuyển mạch), truy cập phương tiện, kiểm soát cách đặt và nhận dữ liệu từ phương tiện (kiểm soát truy cập phương tiện, phát hiện lỗi).
 
-**L1 Lớp vật lý**
+#### L1 Lớp vật lý (physical)
 
 <div align="center">
 <img src="media/1-physical-layer.svg">
