@@ -62,6 +62,7 @@ Nói một cách đơn giản, mô hình này sẽ giúp bạn tìm ra mức đ�
 </div>
 
 
+### Bảng  chi tiết
 | Layer | OSI model layer | Protocol Data Unit | Devices                                    | Protocols                                                    |
 | ----- | --------------- | ------------------ | ------------------------------------------ | ------------------------------------------------------------ |
 | 7     | Application     | Data               | L7 firewall                                | HTTP, DNS, DHCP, FTP, Telnet, SSH, SMTP, POP, IMAP, NTP, SNMMP, TLS/SSL, GBP, RIP, SIP, etc. |
