@@ -7,13 +7,13 @@ Mục lục:
   - [Các lớp OSI](#các-lớp-osi)
   - [Bảng chi tiết](#bảng-chi-tiết)
   - [Chi tiết từng lớp](#chi-tiết-từng-lớp)
-    - [L7 lớp ứng dụng](#l7-lớp-ứng-dụng-(application))
-    - [L6 lớp trình bày](#l6-lớp-trình-bầy-(Presentation))
+    - [L7 lớp ứng dụng](#l7-lớp-ứng-dụng-application)
+    - [L6 lớp trình bày](#l6-lớp-trình-bầy-presentation)
     - [L5 lớp phiên](#l5-lớp-phiên-(session))
     - [L4 lớp vận chuyển](#l4-lớp-vận-chuyển-(transport))
     - [L3 lớp mạng](#l3-lớp-mạng-(network))
-    - [L2 lớp liên kết dữ liệu](#l2-lớp-liên-kết-dữ-liệu-(data-linklink))
-    - [L1 lớp vật lý](#l1-lớp-vật-lý-(physical))
+    - [L2 lớp liên kết dữ liệu](#l2-lớp-liên-kết-dữ-liệu-data-link)
+    - [L1 lớp vật lý](#l1-lớp-vật-lý-physical)
   - [Cổng lớp vận chuyển](#cổng-lớp-vận-chuyển)
   - [Các cổng quan trọng trên lớp vận chuyển](#các-cổng-quan-trọng-trên-lớp-vận-chuyển)
   - [Các từ viết tắt](#what-is-the-osi-model)
@@ -98,7 +98,7 @@ Nếu các thiết bị đang liên lạc qua kết nối được mã hóa, l�
 
 Cuối cùng, lớp trình bày còn chịu trách nhiệm nén dữ liệu mà nó nhận được từ lớp ứng dụng trước khi chuyển sang lớp 5. Điều này giúp cải thiện tốc độ và hiệu quả truyền thông bằng cách giảm thiểu lượng dữ liệu sẽ được truyền đi, hơn nữa, việc nén dữ liệu có thể bị ảnh hưởng. có hai loại: mất dữ liệu (không đảm bảo tính toàn vẹn dữ liệu) hoặc không mất dữ liệu (đảm bảo tính toàn vẹn dữ liệu).
 
-**L5 Lớp phiên (Session)**
+#### L5 Lớp phiên (Session)
 
 <div align="center">
 <img src="media/5-session-layer.svg">
@@ -111,7 +111,7 @@ Lớp phiên cũng đồng bộ hóa việc truyền dữ liệu với các đi�
 
 Thông thường, nhiệm vụ chính của L5 là xác thực và ủy quyền, tải xuống các tệp dưới dạng gói dữ liệu, quản lý phiên.
 
-**L4 Lớp vận chuyển (Transport)**
+#### L4 Lớp vận chuyển (Transport)
 
 <div align="center">
 <img src="media/4-transport-layer.svg">
@@ -124,7 +124,7 @@ Lớp 4 chịu trách nhiệm liên lạc từ đầu đến cuối giữa hai t
 
 Lớp vận chuyển cũng chịu trách nhiệm kiểm soát luồng và kiểm soát lỗi. Kiểm soát luồng xác định tốc độ truyền tối ưu để đảm bảo rằng người gửi có kết nối nhanh không làm quá tải người nhận có kết nối chậm. Lớp vận chuyển thực hiện kiểm soát lỗi ở đầu nhận bằng cách đảm bảo rằng dữ liệu nhận được là hoàn chỉnh và kiểm tra tổng kiểm tra các đơn vị dữ liệu và sử dụng yêu cầu lặp lại tự động nếu không.
 
-**L3 Lớp mạng (Network)**
+#### L3 Lớp mạng (Network)
 
 <div align="center">
 <img src="media/3-network-layer.svg">
@@ -155,7 +155,7 @@ Nhiệm vụ thường là địa chỉ logic (lớp mạng), địa chỉ vật
 
 Lớp này bao gồm các thiết bị vật lý liên quan đến việc truyền dữ liệu, chẳng hạn như cáp và bộ chuyển mạch. Đây cũng là lớp nơi dữ liệu được chuyển đổi thành luồng bit, là chuỗi 1 và 0. Lớp vật lý của cả hai thiết bị cũng phải thống nhất về quy ước tín hiệu để có thể phân biệt được số 1 với số 0 trên cả hai thiết bị.
 
-**Cổng lớp vận chuyển**
+#### Cổng lớp vận chuyển
 
 | Category         | Range       | Comments                                                     |
 | ---------------- | ----------- | ------------------------------------------------------------ |
@@ -163,7 +163,7 @@ Lớp này bao gồm các thiết bị vật lý liên quan đến việc truy�
 | Cổng đã đăng ký | 1024-49151  | Đối với các dịch vụ cụ thể, ví dụ PostgreSQL(5432), Redis(6379), v.v.. |
 | Cổng riêng    | 49152-65535 | Cho mục đích riêng tư, ví dụ như để chạy một ứng dụng.              |
 
-**Các cổng quan trọng trên lớp vận chuyển**
+#### Các cổng quan trọng trên lớp vận chuyển
 
 | Port Number | Protocol | Application                     |
 | ----------- | -------- | ------------------------------- |
